@@ -1,0 +1,19 @@
+﻿.title {
+    text-align: center;
+    padding-top: 25px;
+}
+
+* {
+    font-family: 'Quicksand', sans-serif;
+    scroll-behavior: smooth;
+    cursor: pointer;
+}
+
+body {
+    background-color: #F8F9FA;
+}
+
+img {
+    border: 8px solid;
+    border-color: #F8F9FA;
+}

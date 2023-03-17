@@ -1,0 +1,46 @@
+﻿.title {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+* {
+    scroll-behavior: smooth;
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+    background-color: #F8F9FA;
+}
+
+.container {
+    margin: auto;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.album {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 260px;
+}
+
+    .album img {
+        width: 100%;
+        height: auto;
+    }
+
+    .album:hover img {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+.info {
+    padding: 15px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    border: 1px solid;
+}

@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - PhotoAlbum_Serna</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/PhotoAlbum_Serna.styles.css" asp-append-version="true" />
+    <style>
+        .navbar-brand{
+            font-family: 'Quicksand', sans-serif;
+            font-weight: bold;
+        }
+        .nav-item{
+            font-family: 'Quicksand', sans-serif;
+         
+        }
+        .nav-item:hover{
+            background-color:white;
+            color: white;
+        }
+        body{
+		background-color: #F8F9FA;
+	    }
+        #navbars{
+            overflow:hidden;
+          
+            background-color: #F8F9FA; 
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+    <header id="navbars" class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a asp-area="" asp-page="/Index" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        <span class="fs-4">Serna Photo Album <i class="bi bi-camera-fill"></i></span>
+      </a>
+
+      <ul class="nav nav">
+        <li class="nav-item"><a class="nav-link " asp-area="" asp-page="/Index">Home</a></li>
+        <li class="nav-item"><a class="nav-link " asp-area="" asp-page="/Nbaplayers">NBA Players</a></li>
+        <li class="nav-item"><a class="nav-link " asp-area="" asp-page="/Nbateams">NBA Teams</a></li>
+        <li class="nav-item"><a class="nav-link " asp-area="" asp-page="/Nbashoes">NBA Signature Shoes</a></li>
+        <li class="nav-item"><a class="nav-link " asp-area="" asp-page="/MobileGames">Mobile Games</a></li>
+        <li class="nav-item"><a class="nav-link " asp-area="" asp-page="/ValorantAgents">Valorant Agents</a></li>
+      </ul>
+    </header>
+  </div>
+
+
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

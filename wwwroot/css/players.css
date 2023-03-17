@@ -1,0 +1,24 @@
+﻿.title {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+* {
+    font-family: 'Quicksand', sans-serif;
+    scroll-behavior: smooth;
+    cursor: pointer;
+}
+
+body {
+    background-color: #F8F9FA;
+}
+
+p {
+    font-size: 14px;
+}
+
+.col:hover {
+    border: 2px solid #66b3ff;
+    transition: 0.3s all ease;
+}
